@@ -20,7 +20,7 @@ class SlideViewController: UIViewController {
     }
     
     private func setImage(PageNumber num:Int){
-        self.SlideImage.image = UIImage(named: <#T##String#>)
+        self.SlideImage.image = UIImage(named: "page\(num).jpg")!
     }
     
     private func setText(PageNumber num:Int){
