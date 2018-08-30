@@ -12,7 +12,7 @@
         <!--Slide View Controller-->
         <scene sceneID="IES-y2-YCY">
             <objects>
-                <viewController storyboardIdentifier="SlideViewController" id="WAL-dj-jTH" customClass="SlideViewController" customModule="Introduction" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SlideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WAL-dj-jTH" customClass="SlideViewController" customModule="Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2w-Tu-HYf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,18 +33,18 @@
                         <viewLayoutGuide key="safeArea" id="qun-lB-cC7"/>
                     </view>
                     <connections>
-                        <outlet property="SlideImage" destination="3kh-3w-sWD" id="gBd-p9-DmS"/>
-                        <outlet property="SlideText" destination="Xqd-sB-NLk" id="spG-fw-DwZ"/>
+                        <outlet property="SlideImage" destination="3kh-3w-sWD" id="FhS-NL-Sdt"/>
+                        <outlet property="SlideText" destination="Xqd-sB-NLk" id="BXl-Yi-LFw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e95-QK-Qim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122.40000000000001" y="640.92953523238384"/>
+            <point key="canvasLocation" x="-364" y="495"/>
         </scene>
         <!--Pageview Controller-->
         <scene sceneID="Aev-gV-ni8">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="iUZ-9Y-dFS" customClass="PageviewController" customModule="Introduction" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="iUZ-9Y-dFS" customClass="PageviewController" customModule="Introduction" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjo-7b-5gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-121" y="-232"/>

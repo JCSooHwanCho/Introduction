@@ -17,10 +17,13 @@ class SlideViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setImage(PageNumber: PageNum)
+        setText(PageNumber: PageNum)
     }
     
     private func setImage(PageNumber num:Int){
-        self.SlideImage.image = UIImage(named: "page\(num).jpg")!
+        let newImage = UIImage(named: "page\(num).jpg")
+        self.SlideImage.image = newImage
     }
     
     private func setText(PageNumber num:Int){
@@ -29,9 +32,6 @@ class SlideViewController: UIViewController {
     
     func setSlide(PageNumber num:Int){
         PageNum = num
-        self.setImage(PageNumber: PageNum)
-        self.setText(PageNumber: PageNum)
-        
     }
     /*
     // MARK: - Navigation
