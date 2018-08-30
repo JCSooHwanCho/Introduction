@@ -2,8 +2,8 @@
 //  SlideViewController.swift
 //  Introduction
 //
-//  Created by 미디어스틴트 on 2018. 8. 29..
-//  Copyright © 2018년 미디어스틴트. All rights reserved.
+//  Created by SoohwanCho on 2018. 8. 29..
+//  Copyright © 2018년 SoohwanCho. All rights reserved.
 //
 
 import UIKit

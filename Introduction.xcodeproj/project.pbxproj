@@ -75,6 +75,7 @@
 		4B969B3E213691F100A180A3 /* page7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page7.jpg; sourceTree = "<group>"; };
 		4B969B3F213691F100A180A3 /* page8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page8.jpg; sourceTree = "<group>"; };
 		4B969B40213691F100A180A3 /* page9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page9.jpg; sourceTree = "<group>"; };
+		4B969B4E2137732600A180A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		4B8D85A621361B7800EA17AD = {
 			isa = PBXGroup;
 			children = (
+				4B969B4E2137732600A180A3 /* README.md */,
 				4B8D85B121361B7800EA17AD /* Introduction */,
 				4B8D85CA21361B7A00EA17AD /* IntroductionTests */,
 				4B8D85D521361B7A00EA17AD /* IntroductionUITests */,
