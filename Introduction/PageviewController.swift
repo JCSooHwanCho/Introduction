@@ -48,7 +48,7 @@ extension PageviewController: UIPageViewControllerDataSource {
         let previousIndex = viewControllerIndex - 1
         
         guard previousIndex >= 0 else {
-            return Slides.last!
+            return nil
         }
         
         guard Slides.count > previousIndex else {
@@ -69,7 +69,7 @@ extension PageviewController: UIPageViewControllerDataSource {
         let SlideCount = Slides.count
         
         guard SlideCount != nextIndex else {
-            return Slides.first!
+            return nil
         }
         
         guard SlideCount > nextIndex else {
