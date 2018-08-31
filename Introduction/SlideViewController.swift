@@ -15,7 +15,7 @@ class SlideViewController: UIViewController {
     @IBOutlet var SlideText: UITextView!
     var PageNum = 0
     var TotalPageCount = 10
-    let text = ["Hello~!","조수환\n趙秀煥","from 서울 북동","Developer","현실은...","성취감!","영적인 성장","협력","커뮤니티의 성장","잘 부탁해요!"]
+    let text = ["Hello~!","조수환\n趙秀煥","from\n서울 북동","Developer","현실은...","성취감!","영적인 성장","협력","커뮤니티의\n성장","잘 부탁해요!"]
    //called at every viewLoad, So must set Image and text here.
     override func viewDidLoad() {
         super.viewDidLoad()
