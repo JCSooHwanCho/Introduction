@@ -17,7 +17,7 @@ class PageviewController:UIPageViewController{
         for i in 0..<NofPages
         {
             var Slide = self.newSlideViewController()
-            Slide.setSlide(PageNumber: i)
+            Slide.setSlide(TotalPageCount: NofPages, PageNumber: i)
             S.append(Slide)
         }
         return S
@@ -37,7 +37,7 @@ class PageviewController:UIPageViewController{
     }
 }
 
-
+//MARK: - UIPageViewExtension
 extension PageviewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let Slide = viewController as! SlideViewController

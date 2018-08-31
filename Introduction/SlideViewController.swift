@@ -10,27 +10,36 @@ import UIKit
 
 class SlideViewController: UIViewController {
 
+    @IBOutlet var pageControl: UIPageControl!
     @IBOutlet var SlideImage: UIImageView!
     @IBOutlet var SlideText: UITextView!
     var PageNum = 0
+    var TotalPageCount = 10
     let text = ["Hello~!","조수환\n趙秀煥","from 서울 북동","Developer","현실은...","성취감!","영적인 성장","협력","커뮤니티의 성장","잘 부탁해요!"]
+   //called at every viewLoad, So must set Image and text here.
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setImage(PageNumber: PageNum)
-        setText(PageNumber: PageNum)
+        self.setImage()
+        self.setText()
+        self.setPageControl()
     }
     
-    private func setImage(PageNumber num:Int){
-        let newImage = UIImage(named: "page\(num).jpg")
+    private func setImage(){
+        let newImage = UIImage(named: "page\(PageNum).jpg")
         self.SlideImage.image = newImage
     }
     
-    private func setText(PageNumber num:Int){
-        self.SlideText.text = self.text[num]
+    private func setText(){
+        self.SlideText.text = self.text[PageNum]
+    }
+    private func setPageControl(){
+        pageControl.numberOfPages = TotalPageCount
+        pageControl.currentPage = PageNum
     }
     
-    func setSlide(PageNumber num:Int){
+    func setSlide(TotalPageCount total:Int, PageNumber num:Int){
+        TotalPageCount = total
         PageNum = num
     }
     /*
