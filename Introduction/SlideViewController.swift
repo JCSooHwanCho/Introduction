@@ -13,6 +13,13 @@ class SlideViewController: UIViewController {
     @IBOutlet var pageControl: UIPageControl!
     @IBOutlet var SlideImage: UIImageView!
     @IBOutlet var SlideText: UITextView!
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return [.portrait,.landscape,.portraitUpsideDown]
+    }
+    
     var PageNum = 0
     var TotalPageCount = 10
     let text = ["Hello~!","조수환\n趙秀煥","from\n서울 북동","Developer","현실은...","성취감!","영적인 성장","협력","커뮤니티의\n성장","잘 부탁해요!"]
@@ -23,6 +30,8 @@ class SlideViewController: UIViewController {
         self.setImage()
         self.setText()
         self.setPageControl()
+        
+        SlideImage.translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func setImage(){

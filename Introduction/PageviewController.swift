@@ -11,6 +11,13 @@ import UIKit
 
 
 class PageviewController:UIPageViewController{
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return [.portrait,.landscape,.portraitUpsideDown]
+    }
     let NofPages = 10
     private lazy var Slides:[SlideViewController]={
         var S:[SlideViewController] = []
@@ -79,6 +86,4 @@ extension PageviewController: UIPageViewControllerDataSource {
         
         return S
     }
-    
-    
 }
