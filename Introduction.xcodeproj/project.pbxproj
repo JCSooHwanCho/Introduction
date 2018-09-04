@@ -28,6 +28,7 @@
 		4B969B4B213691F200A180A3 /* page7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B969B3E213691F100A180A3 /* page7.jpg */; };
 		4B969B4C213691F200A180A3 /* page8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B969B3F213691F100A180A3 /* page8.jpg */; };
 		4B969B4D213691F200A180A3 /* page9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B969B40213691F100A180A3 /* page9.jpg */; };
+		4BC1FBDD213E1EF100B9E6F6 /* text.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BC1FBDC213E1EF100B9E6F6 /* text.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		4B969B3F213691F100A180A3 /* page8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page8.jpg; sourceTree = "<group>"; };
 		4B969B40213691F100A180A3 /* page9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page9.jpg; sourceTree = "<group>"; };
 		4B969B4E2137732600A180A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4BC1FBDC213E1EF100B9E6F6 /* text.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = text.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				4B8D85C221361B7A00EA17AD /* Info.plist */,
 				4B8D85E421361C2000EA17AD /* PageviewController.swift */,
 				4B8D85E621361E7900EA17AD /* SlideViewController.swift */,
+				4BC1FBDC213E1EF100B9E6F6 /* text.json */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				4B969B48213691F200A180A3 /* page4.jpg in Resources */,
 				4B8D85C121361B7A00EA17AD /* LaunchScreen.storyboard in Resources */,
 				4B969B4C213691F200A180A3 /* page8.jpg in Resources */,
+				4BC1FBDD213E1EF100B9E6F6 /* text.json in Resources */,
 				4B969B49213691F200A180A3 /* page5.jpg in Resources */,
 				4B969B44213691F200A180A3 /* page0.jpg in Resources */,
 				4B969B47213691F200A180A3 /* page3.jpg in Resources */,
@@ -508,7 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mediastint.Introduction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -526,7 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mediastint.Introduction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

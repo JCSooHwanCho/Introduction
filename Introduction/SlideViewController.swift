@@ -22,11 +22,15 @@ class SlideViewController: UIViewController {
     
     var PageNum = 0
     var TotalPageCount = 10
-    let text = ["Hello~!","조수환\n趙秀煥","from\n서울 북동","Developer","현실은...","성취감!","영적인 성장","협력","커뮤니티의\n성장","잘 부탁해요!"]
+    var text:([String])?
    //called at every viewLoad, So must set Image and text here.
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        text = loadTextFromJSON()
+        if text == nil{
+            exit(0)
+        }
         self.setImage()
         self.setText()
         self.setPageControl()
@@ -40,7 +44,7 @@ class SlideViewController: UIViewController {
     }
     
     private func setText(){
-        self.SlideText.text = self.text[PageNum]
+        self.SlideText.text = self.text![PageNum]
     }
     private func setPageControl(){
         pageControl.numberOfPages = TotalPageCount
@@ -51,14 +55,18 @@ class SlideViewController: UIViewController {
         TotalPageCount = total
         PageNum = num
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func loadTextFromJSON()->[String]?{
+        let decoder = JSONDecoder();
+        let path = Bundle.main.path(forResource: "text", ofType: "json")
+        if let data = try? String(contentsOfFile: path!).data(using: .utf8){
+            do{
+                let text = try decoder.decode([String].self, from: data!)
+                return text
+            }
+            catch{
+                print(error)
+            }
     }
-    */
-
+        return nil
+    }
 }
