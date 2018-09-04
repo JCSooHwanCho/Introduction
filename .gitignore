@@ -33,5 +33,5 @@ DerivedData/
 /*.gcno
 
 *.jpg
-*.json
+text.json
 # End of https://www.gitignore.io/api/xcodeOB
