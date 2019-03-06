@@ -34,12 +34,13 @@ class SlideViewController: UIViewController {
         self.setImage()
         self.setText()
         self.setPageControl()
+        pageControl.isHidden = true
         
         SlideImage.translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func setImage(){
-        let newImage = UIImage(named: "page\(PageNum).jpg")
+        let newImage = UIImage(named: "page\(PageNum).JPG")
         self.SlideImage.image = newImage
     }
     
